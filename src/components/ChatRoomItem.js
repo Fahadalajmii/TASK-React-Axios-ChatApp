@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import UpdateRoomModal from "./UpdateRoomModal";
 
-const ChatRoomItem = ({ room }) => {
+const ChatRoomItem = ({ room, deleteRoom, updateRoom }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const closeModal = () => setIsOpen(false);
@@ -12,6 +12,7 @@ const ChatRoomItem = ({ room }) => {
 
   const handleDelete = () => {
     // call a function from app to delete a room (pass room.id as a parameter)
+    deleteRoom(room.id);
   };
   return (
     <div className="group">
@@ -35,7 +36,12 @@ const ChatRoomItem = ({ room }) => {
       <Button className="delete" onClick={openModal}>
         Update
       </Button>
-      <UpdateRoomModal isOpen={isOpen} closeModal={closeModal} room={room} />
+      <UpdateRoomModal
+        isOpen={isOpen}
+        updateRoom={updateRoom}
+        closeModal={closeModal}
+        room={room}
+      />
     </div>
   );
 };

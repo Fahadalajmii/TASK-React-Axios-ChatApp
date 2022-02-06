@@ -7066,14 +7066,14 @@
   "resolved" "https://registry.npmjs.org/mobx-react-lite/-/mobx-react-lite-3.2.3.tgz"
   "version" "3.2.3"
 
-"mobx-react@^7.2.0":
+"mobx-react@^7.2.1":
   "integrity" "sha512-LZS99KFLn75VWDXPdRJhILzVQ7qLcRjQbzkK+wVs0Qg4kWw5hOI2USp7tmu+9zP9KYsVBmKyx2k/8cTTBfsymw=="
   "resolved" "https://registry.npmjs.org/mobx-react/-/mobx-react-7.2.1.tgz"
   "version" "7.2.1"
   dependencies:
     "mobx-react-lite" "^3.2.0"
 
-"mobx@^6.1.0", "mobx@^6.3.3":
+"mobx@^6.1.0", "mobx@^6.3.13":
   "integrity" "sha512-zDDKDhYUk9QCHQUdLG+wb4Jv/nXutSLt/P8kkwHyjdbrJO4OZS6QTEsrOnrKM39puqXSrJZHdB6+yRys2NBFFA=="
   "resolved" "https://registry.npmjs.org/mobx/-/mobx-6.3.13.tgz"
   "version" "6.3.13"

@@ -1,7 +1,7 @@
 import { Modal, Button, InputGroup, Form } from "react-bootstrap";
 import React, { useState } from "react";
 
-const UpdateRoomModal = ({ room, isOpen, closeModal }) => {
+const UpdateRoomModal = ({ room, isOpen, closeModal, updateRoom }) => {
   const [roomForm, setRoomForm] = useState({
     id: room.id,
     title: room.title,
@@ -12,6 +12,7 @@ const UpdateRoomModal = ({ room, isOpen, closeModal }) => {
     setRoomForm({ ...roomForm, [event.target.name]: event.target.value });
   };
   const handleSubmit = (event) => {
+    updateRoom(room.id, roomForm);
     closeModal();
   };
   return (
